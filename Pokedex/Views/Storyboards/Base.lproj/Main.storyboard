@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -49,7 +51,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="x2o-ij-Pig" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BWu-9W-ijp"/>
                             <constraint firstItem="Pza-6g-mva" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LAY-vi-XtC"/>
@@ -57,13 +60,12 @@
                             <constraint firstItem="Pza-6g-mva" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lJU-h5-kWo"/>
                             <constraint firstItem="Pza-6g-mva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uv8-nR-dpc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="pokeIDLabel" destination="Ekq-Jz-uSg" id="P0h-WY-M5a"/>
-                        <outlet property="pokeImageView" destination="XZ5-zu-dZV" id="q4f-jv-FuQ"/>
-                        <outlet property="pokeNameLabel" destination="nMP-5s-Kwx" id="2vl-K2-GVu"/>
-                        <outlet property="pokeSearchBar" destination="CZv-gD-YqW" id="sQ6-h9-XZf"/>
+                        <outlet property="pokeIDLabel" destination="Ekq-Jz-uSg" id="NHf-ZA-UIh"/>
+                        <outlet property="pokeImageView" destination="XZ5-zu-dZV" id="DSp-9u-SU0"/>
+                        <outlet property="pokeNameLabel" destination="nMP-5s-Kwx" id="UfT-Vp-zEa"/>
+                        <outlet property="searchBar" destination="CZv-gD-YqW" id="QJs-Py-AI6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,4 +73,9 @@
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
